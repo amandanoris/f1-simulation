@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>F1 simulation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('{{ url_for("static", filename="background.jpg") }}');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.6;
+        }
+
+        #miBoton {
+            background-color: #00ccc9; /* Color de fondo rojo claro */
+            border: none; /* Elimina el borde predeterminado */
+            color: white; /* Color del texto */
+            padding: 10px 20px; /* Espaciado interior */
+            text-align: center; /* Alineación del texto */
+            text-decoration: none; /* Elimina el subrayado */
+            display: inline-block;
+            font-size: 16px;
+            margin: 0 auto; /* Centrado horizontalmente */
+            cursor: pointer; /* Cambia el cursor al pasar el mouse */
+            margin-top: -500px; /* Mueve el botón hacia arriba */
+            position: absolute;
+        }
+
+        #resultado {
+            background-color: white; /* Fondo blanco para el texto del resultado */
+            padding: 10px; /* Espaciado interior para separar el texto del borde */
+            border-radius: 5px; /* Bordes redondeados para un aspecto más suave */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave para destacar el div */
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <button id="miBoton">Start simulation</button>
+    <div id="resultado"></div>
+
+    <script>
+        $(document).ready(function() {
+            $('#miBoton').click(function() {
+                $.ajax({
+                    type: 'GET',
+                    url: '/ejecutar_funcion',
+                    success: function(data) {
+                        $('#resultado').text(data);
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                        console.error(textStatus, errorThrown);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
