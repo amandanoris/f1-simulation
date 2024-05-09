@@ -1,0 +1,16 @@
+The race begins
+The length of the track is 230 with 3 laps to go
+The actual speed of the driverClyde Cresci is 295
+The actual speed of the driverSamuel Smith is 280
+The actual speed of the driverBenjamin Adams is 367
+The actual speed of the driverRobert Allen is 325
+The actual speed of the driverAdam Shank is 292
+The actual speed of the driverLoretta Wallace is 256
+Below is the final table of race positions.
+Posición 1 pilotos Clyde Cresci del equipo Team Whitney
+Posición 2 pilotos Samuel Smith del equipo Team Whitney
+Posición 3 pilotos Benjamin Adams del equipo Team Mary
+Posición 4 pilotos Robert Allen del equipo Team Mary
+Posición 5 pilotos Adam Shank del equipo Team May
+Posición 6 pilotos Loretta Wallace del equipo Team May
+The race lasted 12 seconds.

@@ -22,7 +22,7 @@ class Pilot(Agente):
     
     def check_tires(self):
         if(self.creencias.car.tires.resistencia < 2):
-           print( self.name + " va pal pit")
+           #print( self.name + " va pal pit")
            self.no_stops += 1
            self.do_pitstop = True
         
@@ -77,7 +77,7 @@ class PilotBeliefs:
     def determinar_deseo(self):
         #si tu equipo es muy malo contigo les jodes la carrera
         if self.confianza < 5:
-            print("Un piloto le ha perdido la confinaza a su equipo")
+            #print("Un piloto le ha perdido la confinaza a su equipo")
             return PilotDesires.sabotear_carrea
         else:
             return PilotDesires.ganar_carrera

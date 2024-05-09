@@ -5,7 +5,6 @@ from src.utils import normalize
 from enum import Enum
 from src.Team import Team
 
-
 class Director(Agente):
     def __init__(self, creencias, deseos, intenciones, equipo, sistema_mensajeria):
         super().__init__(creencias, deseos, intenciones, sistema_mensajeria)

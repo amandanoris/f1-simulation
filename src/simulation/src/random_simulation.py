@@ -343,7 +343,6 @@ def race_sim(directors, pilots, race, deseos):
         print(pilots[i].name +" "+ str(final_times[i]))
     '''
    
-
     primer_piloto = next(iter(tabla_final.items()))
     rapido = primer_piloto[0]
 
